@@ -1,0 +1,66 @@
+.calculator {
+    background-color: #fff;
+    width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: 1px solid #ddd; /* Добавляем границу */
+    display: flex;
+    flex-direction: column; /* Контейнер становится гибким, и дочерние элементы располагаются вертикально */
+    align-items: center; /* Центрирование по горизонтали для дочерних элементов */
+}
+
+.calculator h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.calculator form {
+    width: 100%; /* Форма занимает всю ширину контейнера */
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator input[type="text"] {
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 95%; /* input-ы занимают почти всю ширину формы */
+}
+
+.calculator select {
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+}
+
+.calculator button {
+    padding: 12px 18px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Плавное изменение цвета при наведении */
+}
+
+.calculator button:hover {
+    background-color: #4cae4c;
+}
+
+.calculator .result, .calculator .error {
+   margin-top: 15px;
+   text-align: center;
+   font-size: 1.1em;
+}
+.calculator .error {
+  color: red;
+}
+.calculator .result {
+  color: green;
+  font-weight: bold;
+}
